@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-wine: #8B1A1A;
+  --color-wine-dark: #6B1414;
+  --color-cream: #FDF6E3;
+  --color-cream-dark: #F5ECD5;
+  --color-olive: #556B2F;
+  --color-olive-light: #6B8A3E;
+  --color-gold: #C4943A;
+  --color-charcoal: #2C2C2C;
+  --color-warm-brown: #8B6914;
+}
+
+@layer base {
+  :root {
+    --background: 40 33% 94%;
+    --foreground: 0 0% 17%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 17%;
+    --primary: 0 71% 32%;
+    --primary-foreground: 40 33% 94%;
+    --secondary: 80 40% 30%;
+    --secondary-foreground: 40 33% 94%;
+    --muted: 40 20% 88%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 40 60% 50%;
+    --accent-foreground: 0 0% 17%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 20% 85%;
+    --input: 40 20% 85%;
+    --ring: 0 71% 32%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Lato', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+  font-family: 'Lato', sans-serif;
+}
